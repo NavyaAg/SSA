@@ -1,0 +1,276 @@
+body{
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  padding: 2% 10% 1%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav-link{
+  margin:2px;
+}
+
+.scrolled {
+  background-color: #353a40 ;
+  transition: background-color 200ms linear;
+}
+.nav-shadow{
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+/* The outermost element*/
+.header-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.zoominheader {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: zoomin 10s ease-in infinite;
+  animation: zoomin 10s ease-in infinite;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* The innermost element*/
+.zoomoutheader {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: none;
+  -webkit-animation: zoomout 10s ease-in infinite;
+  animation: zoomout 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*End of Zoom in Keyframes */
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.67);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomout {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.67);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*End of Zoom out Keyframes */
+.text {
+
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  /* bottom: 50%;
+  right: 50%; */
+  transform: translate(-50%, -50%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.text button{
+  margin:10px;
+}
+
+#AboutUs{
+padding: 5% 10%;
+
+}
+h2{
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 30px;
+}
+h6{
+  font-family: 'Raleway', sans-serif;
+}
+/* services */
+.parent{
+  height:400px;
+  /* width:100%; */
+  overflow: hidden;
+}
+.parent img{
+  height: 100%;
+  width:100%;
+  transition: transform .5s ,filter .5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(25%);
+}
+.parent:hover img{
+  filter: brightness(50%);
+  transform: scale(1.1);
+
+}
+.col-lg-4{
+  padding:0;
+}
+
+.services-button{
+  font-weight: 700;
+
+}
+.button{
+  color:white;
+  padding: 1rem 25%;
+    border: 2px solid  rgba(220, 196, 122,0.44);
+      outline: none;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+.button.btn-background-slide::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color:  rgba(220, 196, 122,0.44);
+  transform:  scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+.button.btn-background-slide{
+  transition: color 300ms ease-in-out;
+  /* z-index: 1; */
+}
+.button.btn-background-slide:hover
+{
+  color:#222;
+}
+.button.btn-background-slide:hover::before,
+.button.btn-background-slide:hover::before
+{
+transform: scaleX(1);
+}
+
+.col-lg-2 {
+    position: relative;
+    text-align: center;
+
+}
+.partners{
+  padding: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+  text-align: center;
+}
+#testimonials{
+  background-color:#2f2f2f;
+}
+.testimonial-images {
+  width: 8%;
+margin-bottom: 15px;
+}
+.carousel-item h4,.carousel-item h6{
+  color:#fafafa;
+}
+#contact{
+  text-align: center;
+  background-color: #dcc47a;
+  padding: 5% 15%;
+}
+#contact a{
+  padding: 2% 15%;
+  text-decoration: none;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  transition: color .5s ,box-shadow 500ms, background-color 500ms ease-in-out;
+}
+#contact a:hover{
+  color: black;
+  background-color:white;
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+#footer{
+  padding: 7% 15%;
+}
+ul{
+  list-style-type: none;
+}
+footer{
+  background-color: #2f2f2f;
+  text-align: center;
+  color: white;
+}
