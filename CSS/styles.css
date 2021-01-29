@@ -308,3 +308,11 @@ footer{
 i{
   margin-right: 3px;
 }
+
+.catalogue-list {
+    float: left;
+    margin-right: 4%;
+}
+.catalog-block{
+  margin-bottom: 10px;
+}
