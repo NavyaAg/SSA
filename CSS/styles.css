@@ -26,6 +26,32 @@ line-height: 140%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+/* headerrrrrrr */
+.bg-zoom{
+  height: 100vh;
+  background-image: url(https://www.homestratosphere.com/wp-content/uploads/2019/08/Different-types-of-flooring-tiles.jpg);
+  background-repeat:none;
+  background-size: 110% 110%;
+  background-position: center center;
+  animation: shrink 5s infinite alternate;
+  position:relative;
+}
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+ .absolute{
+  position:absolute;
+  top:50%;
+  left:50%;
+  text-align:center;
+   transform: translate(-50%,-50%);
+}
 /* The outermost element*/
 .header-wrapper {
   overflow: hidden;
@@ -158,6 +184,9 @@ h6{
   font-family: 'Raleway', sans-serif;
 }
 /* services */
+#services{
+  overflow: hidden;
+}
 .parent{
   height:400px;
   /* width:100%; */
