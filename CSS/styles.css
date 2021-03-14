@@ -253,23 +253,49 @@ footer{
 i{
   margin-right: 3px;
 }
-
+#catalogs{
+  padding:2% 10%;
+}
 .catalogue-list {
     /* float: left; */
-    margin: 0 4%;
+
     width:150px;
     background-color: red;
     position: fixed;
 
 }
 .catalog-block{
+  margin: 30px;
   margin-bottom: 5px;
 }
-.catalog-text{
+/* .catalog-text{
   text-align: left;
-}
-main{
-  margin-left:300px;
-  max-width: 900px;
+} */
+
+.catalog-navbar{
   text-align: center;
+    /* border-bottom: 2px solid rgba(255, 255, 255); */
+    padding: 0 1% 2%;
+
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+.catalogs-links{
+  padding: 0 25px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,2fr));
+  grid-gap:25px;
+  align-items: center;
+
+}
+.flex-item{
+  place-self:center;
+  border: solid black 1px;
 }
