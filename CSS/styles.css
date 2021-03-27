@@ -256,14 +256,7 @@ i{
 #catalogs{
   padding:2% 10%;
 }
-.catalogue-list {
-    /* float: left; */
 
-    width:150px;
-    background-color: red;
-    position: fixed;
-
-}
 .catalog-block{
   margin: 30px;
   margin-bottom: 5px;
